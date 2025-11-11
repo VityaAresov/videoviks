@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videoviks — Film Production Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="masthead" id="top">
+      <div class="masthead__brand">Videoviks</div>
+      <button class="masthead__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+      </button>
+      <nav class="masthead__nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#roster">Roster</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <button class="masthead__showreel" type="button" data-action="open-overlay" data-overlay-key="showreel">Showreel</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="showreel">
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/images/hero-placeholder.png">
+          <source src="https://cdn.coverr.co/videos/coverr-city-in-hyperspeed-8256/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay">
+          <p class="hero__eyebrow">London · Global Production Partners</p>
+          <h1>Bold moving-image stories for brands that want a visceral response.</h1>
+          <div class="hero__actions">
+            <button class="button button--light" type="button" data-action="open-overlay" data-overlay-key="showreel">Play 2024 Showreel</button>
+            <a class="button button--ghost" href="#work">View latest work</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-highlight" aria-label="Highlighted productions">
+        <div class="grid-highlight__intro">
+          <p class="eyebrow">New film drops</p>
+          <h2>Ideas built for cinema. Delivered for every screen.</h2>
+          <p>
+            Videoviks partners with fearless agencies and artists, capturing detail-rich worlds that feel tactile, human and entirely alive.
+          </p>
+        </div>
+        <div class="grid-highlight__gallery">
+          <article class="tile tile--large">
+            <div class="tile__media tile__media--mirage"></div>
+            <div class="tile__content">
+              <p class="tile__meta">Commercial · 2:15</p>
+              <h3>Mirage for KARI</h3>
+              <p>Fluid camera moves and choreography suspended inside a mirrored desert installation.</p>
+            </div>
+          </article>
+          <article class="tile">
+            <div class="tile__media tile__media--signal"></div>
+            <div class="tile__content">
+              <p class="tile__meta">Music video · 3:42</p>
+              <h3>Signal Loss</h3>
+              <p>High-frequency lighting collides with analog synth textures for artist HALI.</p>
+            </div>
+          </article>
+          <article class="tile">
+            <div class="tile__media tile__media--ember"></div>
+            <div class="tile__content">
+              <p class="tile__meta">Experiential · Live</p>
+              <h3>Ember Bloom</h3>
+              <p>Immersive botanical night walk with responsive projections and scent design.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-heading">Recent partnerships shaping culture</h2>
+        </div>
+        <div class="work__grid">
+          <article class="work-card">
+            <div class="work-card__media work-card__media--cascade"></div>
+            <div class="work-card__body">
+              <h3>Cascade Athletics — "Weightless"</h3>
+              <p>
+                Shot on 16mm and layered with volumetric water FX, the campaign blurs aquatic and aerial movement for a new range of adaptive sportswear.
+              </p>
+              <ul>
+                <li>Director: Sora Patel</li>
+                <li>Agency: North &amp; Pine</li>
+                <li>Release: February 2024</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card__media work-card__media--solstice"></div>
+            <div class="work-card__body">
+              <h3>Solstice Spirits — "Afterlight"</h3>
+              <p>
+                A dusk-to-dawn portrait of multi-generational creatives, blending table-top macro work with intimate docu-style vignettes.
+              </p>
+              <ul>
+                <li>Director: Amelia Rhys</li>
+                <li>Agency: Velvet Hammer</li>
+                <li>Release: November 2023</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card__media work-card__media--vault"></div>
+            <div class="work-card__body">
+              <h3>Vault Bank — "Future In Safe Hands"</h3>
+              <p>
+                Hyperreal macro builds and CG architecture melt together to form a kinetic journey through trust and technology.
+              </p>
+              <ul>
+                <li>Director: Noah Wells</li>
+                <li>Agency: Halo &amp; Co</li>
+                <li>Release: August 2023</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="roster" id="roster" aria-labelledby="roster-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Director roster</p>
+          <h2 id="roster-heading">Multidisciplinary voices shaping the Videoviks slate</h2>
+        </div>
+        <div class="roster__grid">
+          <article class="roster-card">
+            <div class="roster-card__media roster-card__media--amelia"></div>
+            <div class="roster-card__body">
+              <h3>Amelia Rhys</h3>
+              <p>Fashion-forward energy and dynamic casts built for luxury and sport.</p>
+              <button class="link-button" type="button" data-director="amelia">Open portfolio</button>
+            </div>
+          </article>
+          <article class="roster-card">
+            <div class="roster-card__media roster-card__media--noah"></div>
+            <div class="roster-card__body">
+              <h3>Noah Wells</h3>
+              <p>Documentary intimacy meeting cinematic craft for global causes.</p>
+              <button class="link-button" type="button" data-director="noah">Open portfolio</button>
+            </div>
+          </article>
+          <article class="roster-card">
+            <div class="roster-card__media roster-card__media--sora"></div>
+            <div class="roster-card__body">
+              <h3>Sora Patel</h3>
+              <p>Experimental storytelling that merges practical builds with real-time art.</p>
+              <button class="link-button" type="button" data-director="sora">Open portfolio</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio" id="studio" aria-labelledby="studio-heading">
+        <div class="studio__content">
+          <div class="section-heading">
+            <p class="eyebrow">Videoviks Studio</p>
+            <h2 id="studio-heading">A production ecosystem built for craft</h2>
+          </div>
+          <div class="studio__grid">
+            <div>
+              <p>
+                With in-house creative development, production, post and finishing under one roof, Videoviks moves from first spark to delivery with precision and care. We design bespoke workflows for every partner, scaling across continents with trusted collaborators.
+              </p>
+              <ul>
+                <li>Creative development, research and treatments</li>
+                <li>Location services, casting and international production</li>
+                <li>Offline, grade, sound and finishing suites</li>
+                <li>Interactive and experiential production lab</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Latest headlines</h3>
+              <ul class="news">
+                <li>
+                  <span class="news__date">May 2024</span>
+                  <p>Videoviks honoured with British Arrows Gold for "Weightless".</p>
+                </li>
+                <li>
+                  <span class="news__date">April 2024</span>
+                  <p>Opened a realtime production stage with hybrid LED / projection volumes.</p>
+                </li>
+                <li>
+                  <span class="news__date">March 2024</span>
+                  <p>Director Sora Patel headlines Immersive Futures festival in Lisbon.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="contact__inner">
+          <div class="section-heading">
+            <p class="eyebrow">Work with us</p>
+            <h2 id="contact-heading">Let’s create something iconic.</h2>
+          </div>
+          <p class="contact__description">
+            Brief our producers with the details of your project and we’ll assemble a bespoke team, treatment and schedule within 48 hours.
+          </p>
+          <div class="contact__actions">
+            <a class="button button--dark" href="mailto:hello@videoviks.studio">Start a project</a>
+            <a class="button button--outline" href="mailto:rep@videoviks.studio">Representation</a>
+          </div>
+          <div class="contact__meta">
+            <span>+44 (0)20 5550 1000</span>
+            <span>London · Los Angeles · Remote</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">Videoviks</div>
+      <div class="site-footer__links">
+        <a href="#top">Back to top</a>
+        <a href="mailto:careers@videoviks.studio">Careers</a>
+        <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
+        <a href="https://www.vimeo.com" rel="noreferrer">Vimeo</a>
+      </div>
+      <p class="site-footer__legal">© <span data-year></span> Videoviks Studio. Crafted globally.</p>
+    </footer>
+  </div>
+
+  <div class="overlay" data-overlay hidden>
+    <div class="overlay__dialog" role="dialog" aria-modal="true" aria-label="Videoviks showreel">
+      <button class="overlay__close" type="button" data-action="close-overlay">
+        <span class="sr-only">Close showreel</span>
+        ×
+      </button>
+      <div class="overlay__content">
+        <div class="overlay__text">
+          <p class="eyebrow" data-overlay-eyebrow>Videoviks Showreel</p>
+          <h3 data-overlay-title>2024 Director's Cut</h3>
+          <p data-overlay-description>Experience a charged collection of Videoviks commercial, fashion and experiential work.</p>
+        </div>
+        <div class="overlay__embed" data-overlay-embed>
+          <iframe src="https://player.vimeo.com/video/76979871" title="Showreel" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
