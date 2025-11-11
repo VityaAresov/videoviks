@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videoviks — Cinematic Production Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site__header" id="top">
+      <div class="logo">Videoviks</div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button class="primary-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav-list">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+        </button>
+        <ul class="primary-nav__list" id="primary-nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#directors">Directors</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="work">
+        <div class="hero__media" role="presentation">
+          <div class="hero__glow"></div>
+          <img src="assets/images/hero-placeholder.png" alt="Abstract light trails" loading="lazy" />
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow">Videoviks Production</p>
+          <h1>Cinematic storytelling crafted for brave brands and boundary-pushing artists.</h1>
+          <p>
+            We are a London-based creative production partner delivering bold commercials,
+            music videos and experiential films. From ideation to final grade, our team turns
+            ambitious ideas into unforgettable screen moments.
+          </p>
+          <div class="hero__cta">
+            <a class="button button--primary" href="#featured">View Selected Work</a>
+            <button class="button button--ghost" type="button" data-action="showreel">Play Showreel</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Client list">
+        <div class="marquee__track" role="list">
+          <span role="listitem">Nike</span>
+          <span role="listitem">Spotify</span>
+          <span role="listitem">Apple</span>
+          <span role="listitem">Adidas</span>
+          <span role="listitem">Balenciaga</span>
+          <span role="listitem">Google</span>
+          <span role="listitem">BBC</span>
+          <span role="listitem">Vogue</span>
+        </div>
+      </section>
+
+      <section class="section section--padded" id="featured" aria-labelledby="featured-heading">
+        <div class="section__heading">
+          <p class="eyebrow">Featured Projects</p>
+          <h2 id="featured-heading">A snapshot of our recent collaborations</h2>
+        </div>
+        <div class="projects-grid" role="list">
+          <article class="project-card" role="listitem">
+            <div class="project-card__media project-card__media--dawn"></div>
+            <div class="project-card__content">
+              <p class="project-card__meta">Commercial · 2024</p>
+              <h3>Awaken with Lumi</h3>
+              <p>
+                A dawn-drenched narrative for Lumi Coffee celebrating mindful morning rituals with
+                choreographed movement and natural light.
+              </p>
+            </div>
+          </article>
+          <article class="project-card" role="listitem">
+            <div class="project-card__media project-card__media--pulse"></div>
+            <div class="project-card__content">
+              <p class="project-card__meta">Music Video · 2024</p>
+              <h3>Pulse</h3>
+              <p>
+                Futuristic choreography meets volumetric lighting for artist Nyra’s latest single,
+                merging analogue textures with real-time generative graphics.
+              </p>
+            </div>
+          </article>
+          <article class="project-card" role="listitem">
+            <div class="project-card__media project-card__media--aurora"></div>
+            <div class="project-card__content">
+              <p class="project-card__meta">Experiential · 2023</p>
+              <h3>Celestial Bloom</h3>
+              <p>
+                An immersive projection-mapped installation for the Royal Botanical Gardens, bringing
+                visitors inside a living night garden.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="directors" aria-labelledby="directors-heading">
+        <div class="section__heading">
+          <p class="eyebrow">Directors</p>
+          <h2 id="directors-heading">Voices behind the lens</h2>
+        </div>
+        <div class="directors">
+          <article class="director-card">
+            <h3>Amelia Rhys</h3>
+            <p>
+              Known for kinetic camera work and bold casting, Amelia builds energetic worlds for fashion,
+              sport and youth culture brands.
+            </p>
+            <button class="link-button" type="button" data-director="amelia">View portfolio</button>
+          </article>
+          <article class="director-card">
+            <h3>Noah Wells</h3>
+            <p>
+              Noah blends documentary intimacy with cinematic polish, crafting emotionally charged campaigns
+              for global nonprofits.
+            </p>
+            <button class="link-button" type="button" data-director="noah">View portfolio</button>
+          </article>
+          <article class="director-card">
+            <h3>Sora Patel</h3>
+            <p>
+              Experimental technologist and filmmaker, Sora melds practical effects with generative art to
+              deliver future-forward narratives.
+            </p>
+            <button class="link-button" type="button" data-director="sora">View portfolio</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--padded" id="studio" aria-labelledby="studio-heading">
+        <div class="section__heading">
+          <p class="eyebrow">Our Studio</p>
+          <h2 id="studio-heading">Full-service production with a human heart</h2>
+        </div>
+        <div class="studio">
+          <div class="studio__column">
+            <p>
+              From first spark to final sound design, Videoviks unites directors, producers, editors and
+              technologists under one roof. Our agile production model pairs visionary storytelling with
+              meticulous execution.
+            </p>
+            <ul class="studio__list">
+              <li>Creative development and scriptwriting</li>
+              <li>End-to-end production and post</li>
+              <li>VFX, colour and finishing</li>
+              <li>Immersive experiential activations</li>
+            </ul>
+          </div>
+          <div class="studio__column studio__column--highlight">
+            <h3>Latest News</h3>
+            <ul class="news-list">
+              <li>
+                <span class="news-list__date">May 2024</span>
+                <p>Videoviks wins D&AD Pencil for “Pulse” music video choreography.</p>
+              </li>
+              <li>
+                <span class="news-list__date">Apr 2024</span>
+                <p>New director Sora Patel joins the roster, bringing generative art expertise.</p>
+              </li>
+              <li>
+                <span class="news-list__date">Mar 2024</span>
+                <p>Opened a new colour suite powered by HDR Dolby Vision mastering.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="cta__inner">
+          <h2>Let’s make something unforgettable.</h2>
+          <p>
+            Share your brief with our producers and we’ll tailor a treatment, budget and timeline within 48 hours.
+          </p>
+          <a class="button button--primary" href="mailto:hello@videoviks.studio">Start a project</a>
+          <div class="cta__meta">
+            <span>+44 (0)20 5550 1000</span>
+            <span>London · Remote-friendly worldwide</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site__footer">
+      <div>
+        <h2 class="logo logo--small">Videoviks</h2>
+        <p>Creative production studio specialising in commercials, music videos and immersive experiences.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#top">Back to top</a>
+        <a href="mailto:careers@videoviks.studio">Careers</a>
+        <a href="https://www.instagram.com" rel="noreferrer">Instagram</a>
+      </div>
+      <p class="footer__legal">© <span data-year></span> Videoviks Studio. Crafted in London.</p>
+    </footer>
+  </div>
+
+  <div class="overlay" data-overlay hidden>
+    <div class="overlay__dialog" role="dialog" aria-modal="true" aria-label="Showreel">
+      <button class="overlay__close" type="button" data-action="close-overlay">
+        <span class="sr-only">Close showreel</span>
+        ×
+      </button>
+      <div class="overlay__content">
+        <div class="overlay__poster">
+          <p class="eyebrow">Showreel</p>
+          <h3>Videoviks 2024 Reel</h3>
+          <p>
+            This is a placeholder for the Videoviks showreel. Replace with an embedded video player to share your
+            latest work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
